@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Slay</title>
+    <link href="./styles.css" type="text/css" rel="stylesheet"></link>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="logo">
+        <img src="./Diamond.PNG" class="logoImage">
+      </div>
+      <div class="testing"></div>
+        <ul class="navTabs">
+          <li><a href="*">Items</a></li>
+          <li><a href="*">Shopping Cart</a></li>
+          <li><a href="*">Location</a></li>
+        </ul>
+    </nav>
+
+    <div class="shoppingCartStrip1">
+      <div class="basketballSneakers box">
+        <div class="box-text">
+          <h2>BasketBall Sneakers</h2>
+          <p>Run faster, Jump Higher</p></br>
+          <p>Price: $90 per pair</p>
+          <p><b>Quantity desired:</b> <input type="number" min="0" name="sneakers" style="width:40px"></input></p>
+        </div>
+      </div>
+
+      <div class="powerSupplements box">
+        <div class="box-text">
+          <h2>Power Supplements</h2>
+          <p>Get Healthier, Get Smarter</p></br>
+          <p>Price: $30 per bottle</p>
+          <p><b>Quantity desired:</b> <input type="number" min="0" name="sneakers" style="width:40px"></input></p>
+        </div>
+      </div>
+
+      <div class="activeJerserys box">
+        <div class="box-text">
+          <h2>Active Jerseys</h2>
+          <p>Sweat harder, Wick Better</p></br>
+          <p>Price: $50 per jersey</p>
+          <p><b>Quantity desired:</b> <input type="number" min="0" name="sneakers" style="width:40px"></input></p>
+        </div>
+      </div>
+      <div class="dummy box">
+      </div>
+    </div>
+    <hr/>
+    <div class="estimateOrder">
+      <div class="estimateOrderHeading"><h2>Estimate Order</h2></div>
+      <div class="estimations">
+        <div class="estimationCol">
+          State(required)
+          <select required name="state">
+            <option>California</option>
+            <option>Texas</option>
+            <option>New York</option>
+          </select>
+        </div>
+        <div class="estimationCol">
+          <form>
+            Shipping and Handling Charges:<br/>
+            <input type="radio" name="sourceState" value="PickUp">Pick Up (Free)<br/>
+            <input type="radio" name="sourceState" value="USmail">US Mail ($2/item)<br/>
+            <input type="radio" name="sourceState" value="ups">UPS ($3/item)
+          </form>
+        </div>
+        <div class="estimationCol">
+          <form>
+            Special:<br>
+            <input type="checkbox" name="gift" value="gift">This is a gift.<br>
+            <input type="checkbox" name="mailList" value="mailList">Sign Up for our mailing list!<br>
+            <input type="checkbox" name="recipeBook" value="recipeBook">Get our recipe book.<br>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="finalStrip">
+      <div class="estimations">
+        <div class="comments">
+          <form>
+          Comments: <br/>
+          <textarea name="comments" placeholder="Any other comments. Doesn't affect estimate." style="height:100px; width:500px"></textarea>
+        </form>
+        </div>
+        <div class="calculator">
+          Click to Estimate:<br>
+          <input type="submit" id="estimateButton" value="Estimate Total" ></button>
+          <input type="text" placeholder="$0.00" id="resultant"></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+
+</html>

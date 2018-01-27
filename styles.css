@@ -1,0 +1,130 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  width:100%;
+  height:auto;
+  background-color: rgba(255,255,255, 0.5);
+  border: 1px solid rgba(0,0,0, 0.05);
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.05);
+}
+
+.logo{
+  width:50%;
+  height:70px;
+  float:left;
+  display: flex;
+  align-items: center;
+}
+
+.navTabs{
+  height:70px;
+  width:50%;
+  margin:0;
+  padding:0;
+  display: flex;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.navTabs li{
+  width:auto;
+  height:100%;
+  display:inline-block;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navTabs li:hover{
+  width:auto;
+  display:inline-block;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.navTabs li:hover a{
+color: white;
+}
+
+.navTabs li a{
+  text-decoration: none;
+  color: black;
+}
+
+.logoImage{
+  height: 40px;
+  width:40px;
+  padding: 15px 20px;
+}
+
+.shoppingCartStrip1{
+  box-sizing: border-box;
+  height:auto;
+  background-color: pink:
+}
+.box{
+  height: 300px;
+  margin:10px;
+  background-color: white;
+  width:calc((100% - 10px*4)/2);
+  float:left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.estimateOrderHeading{
+  width:100%;
+  padding:20px 40px;
+}
+
+.estimations{
+  width:100%;
+  height: 150px;
+  box-sizing: border-box;
+}
+.estimationCol{
+  margin:10px;
+  height:100%;
+  width: calc((100% - 10px*6)/3);
+  background-color: white;
+  float:left;
+  display: flex;
+  justify-content: center;
+}
+
+.comments{
+  height: 100%;
+  width: 60%;
+  background-color: white;
+  float:left;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator{
+  height: 100%;
+  width: 40%;
+  background-color: white;
+  float:left;
+}
+
+#estimateButton{
+padding:10px 40px;
+background-color: black;
+color:white;
+}
+
+#resultant{
+  height:10px;
+  padding:10px;
+  background-color: 	#F0F0F0;
+  border: 0;
+}
